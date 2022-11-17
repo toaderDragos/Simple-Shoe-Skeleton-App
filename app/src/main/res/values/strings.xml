@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="enter_pw">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_pw2">Enter password</string>
+    <string name="new_login">New Login</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="are_you_ready_to_enter_in_the_world_of_shoes">Are you ready to enter in the World of Shoes?</string>
+    <string name="welcome">Welcome</string>
+    <string name="description">\tLet’s be honest here, shoes are a major fashion statement. But they’re so much more than that too. Shoes are also for comfort, protection, and work. \n\tImagine riding a horse in sandals, or hiking a mountain in high heels? You couldn’t, could you!? Shoes are so much more important in life than we realize.\n\tThat’s what this article is all about, to show you that these fun facts about shoes prove they’re more than just fancy fashion footwear.</string>
+    <string name="see_the_shoes">See The Shoes</string>
+    <string name="instructions">Instructions</string>
+    <string name="instructions2">Instructions</string>
+    <string name="list_shoes">Shoes List</string>
+    <string name="create_a_new_shoe">Create a New Shoe</string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="save">Save</string>
+    <string name="description2">Description</string>
+
+</resources>
