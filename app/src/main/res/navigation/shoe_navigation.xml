@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/shoe_navigation"
     app:startDestination="@id/loginFragment">
 
         <fragment
             android:id="@+id/loginFragment"
             android:name="com.udacity.shoestore.fragments.LoginFragment"
-            android:label="LoginFragment">
+            android:label="Login"
+            tools:layout="@layout/login_destination_fragment">
             <action
                 android:id="@+id/action_loginFragment_to_welcomeFragment"
                 app:destination="@id/welcomeFragment" />
@@ -15,18 +17,18 @@
         <fragment
             android:id="@+id/shoeListFragment"
             android:name="com.udacity.shoestore.fragments.ShoeListFragment"
-            android:label="ShoeListFragment">
-            <action
-                android:id="@+id/action_shoeListFragment_to_loginFragment"
-                app:destination="@id/loginFragment" />
+            android:label="Shoe List">
             <action
                 android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
                 app:destination="@id/shoeDetailFragment" />
+            <action
+                android:id="@+id/action_shoeListFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
         </fragment>
         <fragment
             android:id="@+id/instructionsFragment"
             android:name="com.udacity.shoestore.fragments.InstructionsFragment"
-            android:label="InstructionsFragment">
+            android:label="Instructions">
             <action
                 android:id="@+id/action_instructionsFragment_to_shoeListFragment"
                 app:destination="@id/shoeListFragment" />
@@ -34,7 +36,7 @@
         <fragment
             android:id="@+id/shoeDetailFragment"
             android:name="com.udacity.shoestore.fragments.ShoeDetailFragment"
-            android:label="ShoeDetailFragment">
+            android:label="Shoe Details">
             <action
                 android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"
                 app:destination="@id/shoeListFragment" />
@@ -42,7 +44,7 @@
         <fragment
             android:id="@+id/welcomeFragment"
             android:name="com.udacity.shoestore.fragments.WelcomeFragment"
-            android:label="WelcomeFragment">
+            android:label="Welcome">
             <action
                 android:id="@+id/action_welcomeFragment_to_instructionsFragment"
                 app:destination="@id/instructionsFragment" />

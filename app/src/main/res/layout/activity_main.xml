@@ -28,6 +28,16 @@
             tools:layout="@layout/login_destination_fragment" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_only_for_list_fragment"
+
+        />
+
 </androidx.drawerlayout.widget.DrawerLayout>
 </layout>
 

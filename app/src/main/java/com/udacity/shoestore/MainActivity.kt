@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.udacity.shoestore.databinding.ActivityMainBinding
 import timber.log.Timber
 
@@ -30,17 +30,11 @@ class MainActivity : AppCompatActivity() {
         // Set up the action bar for use with the NavController
         // test 2  setupActionBarWithNavController(navController)
         // original
-        supportActionBar?.title = "My shoe App"
         appBarConfig = AppBarConfiguration(navController.graph, binding.uselessDrawer)
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfig)
+        // this one puts an extra three lines at the top
+//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfig)
+        setupActionBarWithNavController(navController)
 
-
-//        CRASHES WEIRDLY
-//        val navController: NavController = this.findNavController(R.id.myNavHostFragment)
-//        // placing only the navController
-//        NavigationUI.setupActionBarWithNavController(this, navController)
-//
-//        NavigationUI.setupWithNavController(binding.toolbar, navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {

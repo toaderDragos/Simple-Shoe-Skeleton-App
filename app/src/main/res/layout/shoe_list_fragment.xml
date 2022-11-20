@@ -26,9 +26,26 @@
         android:contentDescription="@string/list_shoes">
 
         <LinearLayout
+            android:id="@+id/listLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nameInLayout"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/no_shoes_inserted" />
+
+
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
+
+<!--<TextView-->
+<!--android:id="@+id/sizeInLayout"-->
+<!--android:layout_width="147dp"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Shoe Size" />-->

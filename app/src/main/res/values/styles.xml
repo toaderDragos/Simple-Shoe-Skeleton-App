@@ -45,7 +45,7 @@
     <style name="lyric_title">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/rage</item>
+        <item name="android:fontFamily">@font/segoeuil</item>
         <item name="android:textSize">34sp</item>
     </style>
 

@@ -16,7 +16,7 @@ class InstructionsFragment : Fragment(){
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         val binding: InstructionDestinationFragmentBinding = DataBindingUtil.inflate(
             inflater,
@@ -28,7 +28,6 @@ class InstructionsFragment : Fragment(){
         binding.button.setOnClickListener {
             view?.findNavController()?.navigate(InstructionsFragmentDirections.actionInstructionsFragmentToShoeListFragment())
         }
-
 
         return binding.root
     }
