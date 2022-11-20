@@ -41,21 +41,22 @@ class ShoeListFragment : Fragment() {
         val shoeListSize: Int? = viewModel.shoesList.value?.size
         viewModel.shoesList.observe(viewLifecycleOwner, Observer {
             if (shoeListSize != null && shoeListSize > 0) {
-                // a new layout
-                val myLayout: LinearLayout = LinearLayout(activity)
-                myLayout.layoutParams = LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.WRAP_CONTENT,
-                    LinearLayout.LayoutParams.MATCH_PARENT )
 
-                // a new textview for the layout
-                val myTextView: TextView = TextView(activity)
-                myTextView.text = viewModel.shoesList.value?.get(shoeListSize.minus(1))?.name
-                binding.nameInLayout.text = myTextView.text
+                for (shoe in viewModel.shoesList.value!!) {
+                    // a new layout
+                    val myLayout: LinearLayout = LinearLayout(activity)
+                    myLayout.layoutParams = LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        LinearLayout.LayoutParams.MATCH_PARENT
+                    )
 
-//                if (myLayout.parent != null) {
-//                    myLayout.getParent().removeView(my)
-//                }
-                myLayout.addView(myTextView)
+                    // a new textview for the layout
+                    val myTextView: TextView = TextView(activity)
+                    myTextView.text = shoe.name
+                    binding.nameInLayout.text = myTextView.text
+
+                    myLayout.addView(myTextView)
+                }
             }
         })
 
