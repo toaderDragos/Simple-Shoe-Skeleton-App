@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         // this one puts an extra three lines at the top
 //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfig)
         setupActionBarWithNavController(navController)
-
     }
 
     override fun onSupportNavigateUp(): Boolean {

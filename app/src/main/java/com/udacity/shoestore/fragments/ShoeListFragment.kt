@@ -2,7 +2,6 @@ package com.udacity.shoestore.fragments
 
 import android.os.Bundle
 import android.view.*
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -25,7 +24,6 @@ class ShoeListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         val binding: ShoeListFragmentBinding = DataBindingUtil.inflate(
             inflater,
             R.layout.shoe_list_fragment,
@@ -41,21 +39,12 @@ class ShoeListFragment : Fragment() {
         val shoeListSize: Int? = viewModel.shoesList.value?.size
         viewModel.shoesList.observe(viewLifecycleOwner, Observer {
             if (shoeListSize != null && shoeListSize > 0) {
-
                 for (shoe in viewModel.shoesList.value!!) {
-                    // a new layout
-                    val myLayout: LinearLayout = LinearLayout(activity)
-                    myLayout.layoutParams = LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.WRAP_CONTENT,
-                        LinearLayout.LayoutParams.MATCH_PARENT
-                    )
 
                     // a new textview for the layout
-                    val myTextView: TextView = TextView(activity)
+                    val myTextView = TextView(activity)
                     myTextView.text = shoe.name
-                    binding.nameInLayout.text = myTextView.text
-
-                    myLayout.addView(myTextView)
+                    binding.listLinearLayout.addView(myTextView)
                 }
             }
         })

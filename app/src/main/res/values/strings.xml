@@ -23,5 +23,6 @@
     <string name="shoe_name">Shoe Name</string>
     <string name="no_shoes_inserted">No shoes inserted yet!</string>
     <string name="all_fields_are_mandatory">All fields are mandatory!</string>
+    <string name="add_shoe">Add a new shoe in list</string>
 
 </resources>

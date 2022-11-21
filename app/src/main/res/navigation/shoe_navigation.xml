@@ -12,7 +12,9 @@
             tools:layout="@layout/login_destination_fragment">
             <action
                 android:id="@+id/action_loginFragment_to_welcomeFragment"
-                app:destination="@id/welcomeFragment" />
+                app:destination="@id/welcomeFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left" />
         </fragment>
         <fragment
             android:id="@+id/shoeListFragment"
@@ -20,10 +22,15 @@
             android:label="Shoe List">
             <action
                 android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
-                app:destination="@id/shoeDetailFragment" />
+                app:destination="@id/shoeDetailFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
             <action
                 android:id="@+id/action_shoeListFragment_to_loginFragment"
-                app:destination="@id/loginFragment" />
+                app:destination="@id/loginFragment"
+                app:popEnterAnim="@anim/slide_out_left"
+                app:popExitAnim="@anim/slide_in_right"
+                />
         </fragment>
         <fragment
             android:id="@+id/instructionsFragment"
@@ -31,7 +38,9 @@
             android:label="Instructions">
             <action
                 android:id="@+id/action_instructionsFragment_to_shoeListFragment"
-                app:destination="@id/shoeListFragment" />
+                app:destination="@id/shoeListFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
         </fragment>
         <fragment
             android:id="@+id/shoeDetailFragment"
@@ -39,7 +48,11 @@
             android:label="Shoe Details">
             <action
                 android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"
-                app:destination="@id/shoeListFragment" />
+                app:destination="@id/shoeListFragment"
+                app:enterAnim="@anim/slide_out_left"
+                app:exitAnim="@anim/slide_in_right"
+                app:popEnterAnim="@anim/slide_out_left"
+                app:popExitAnim="@anim/slide_in_right" />
         </fragment>
         <fragment
             android:id="@+id/welcomeFragment"
@@ -47,6 +60,8 @@
             android:label="Welcome">
             <action
                 android:id="@+id/action_welcomeFragment_to_instructionsFragment"
-                app:destination="@id/instructionsFragment" />
+                app:destination="@id/instructionsFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
         </fragment>
     </navigation>
