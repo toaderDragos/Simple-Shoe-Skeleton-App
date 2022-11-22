@@ -42,11 +42,30 @@
         <item name="android:autofillHints" tools:targetApi="o">@string/enter_pw</item>
     </style>
 
+    <style name="input_details_style" parent="login_style">
+        <item name="android:background">@drawable/round_corners_shape_empty</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_hint_details_style" parent="login_style">
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
     <style name="lyric_title">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/segoeuil</item>
         <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="text_details">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
 

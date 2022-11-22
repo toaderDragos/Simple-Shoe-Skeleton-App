@@ -13,6 +13,7 @@ class ShoeViewModel : ViewModel() {
     init {
         _shoesList.value = mutableListOf()
     }
+
     fun addNewShoe(
         inputName: String,
         inputSize: Double,
@@ -28,5 +29,8 @@ class ShoeViewModel : ViewModel() {
         _shoesList.value?.add(newShoe)
     }
 
+    fun transformSizeFromDoubleToString(size: Double): String {
+        return size.toString()
+    }
 
 }

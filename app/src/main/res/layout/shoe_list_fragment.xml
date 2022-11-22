@@ -2,7 +2,7 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    <!--this layout may be better for general purpose-->
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -26,7 +26,7 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/list_shoes">
         <!--Linear Layout was chosen because it is simple and at this
-        level of development I want to insert only some textViews-->
+        level of development as I want to insert only some textViews-->
         <LinearLayout
             android:id="@+id/listLinearLayout"
             android:layout_width="match_parent"

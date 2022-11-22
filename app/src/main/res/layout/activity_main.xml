@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
 <androidx.drawerlayout.widget.DrawerLayout
     android:id="@+id/useless_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <!-- I used constraint layout because I presume it's more flexible and more adapted for the drawer layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/myNavHostFragment"
